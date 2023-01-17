@@ -1,0 +1,515 @@
+@font-face {
+    src: url('AaronHand.ttf') format('truetype');
+    font-family: "Aaron's Hand";
+}
+@font-face {
+    src: url('CreamineDemoRegular.ttf') format('truetype');
+    font-family: "Creamine Demo";
+}
+:root {
+    --font-color: white;
+}
+@media only screen and (max-width: 904px){
+    .modal-content {
+      width: 100%;
+    }
+    body {
+        background-color: #000000;
+        cursor:url("The Infamous Middle Finger.cur"), auto;
+    }
+    .hover a:hover {
+        cursor:url("golden middle finger link.cur"), auto;
+    }
+    #div-cover {
+        display: flex;
+        flex-direction: column;
+        margin-right: 8px;
+    }
+    #h1-and-lang {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0 0 -98px 0;
+    }
+    #lang {
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 8px 0 0;
+    }
+    #lang a {
+        text-decoration: none;
+        text-align: center;
+        border-radius: 5px;
+        background-color: rgba(23, 191, 237, 0.219);
+        border: 0px solid var(--font-color);
+        width: 70px;
+        padding: 8px 0 8px 0;
+        color:  rgb(23, 191, 237);
+    }
+    h1 {
+        font-family: "Creamine Demo";
+        font-size: 70px;
+        margin: 13px 0 0 15px;
+        padding: 0;
+        color: var(--font-color);
+    }
+    #div-phrase {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+        position: absolute;
+    }
+    #phrase {
+        position: relative;
+        top: 350px;
+        right: 2vw;
+        width: 80vw;
+    }
+    .btn {
+        font-family: "Aaron's Hand";
+        font-size: 30px;
+        text-decoration: none;
+        text-align: center;
+        /* border-radius: 5px;
+        background-color: rgb(23, 191, 237);
+        border: 0px solid var(--font-color); */
+        width: 70px;
+        padding: 12px 8px 5px 8px;
+        color: #eeeeee;
+    }
+    #img-and-btns {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    #img-and-btns-about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    #img-and-btns-works {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items: flex-start;
+        gap: 1vw;
+    }
+    #gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3vw;
+        margin: 75px;
+    }
+    #gallery img {
+        width: 600px;
+        height: 300px;
+        object-fit: cover;
+    }
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+     /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+    /* Caption of Modal Image */
+    #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    }
+    /* Add Animation */
+    .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    }
+    @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+    }
+    @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+    }
+    /* The Close Button */
+    .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    }
+    .close:hover,
+    .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    #gallery img:hover {
+        opacity: 0.7;
+        cursor:url("golden middle finger link.cur"), auto;
+    }
+    #album-text-works p {
+        color: var(--font-color);
+        font-family: 'Apple symbols', sans-serif;
+        font-size: 20px;
+        width: 300px;
+    }
+    #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 200px;
+        margin-top: 200px;
+    }
+    #menu-about {
+        position: absolute;
+        right: -66.2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 200px;
+    }
+    #img-cover {
+        height: 750px;
+        margin-left: -130vw;
+        border-radius: 20px;
+        border: 0px solid rgba(0, 0, 255, 0);
+        z-index: -1;
+
+    }
+    #img-and-btns img {
+        object-fit: cover;
+        object-position: 0 -20%;
+    }
+    #img-cover-about {
+        width: 700px;
+        margin-left: -80px;
+        border-radius: 20px;
+        border: 0px solid rgba(0, 0, 255, 0);
+        z-index: -1;
+    }
+    #img-cover-works {
+        width: 400px;
+        border-radius: 20px;
+        border: 0px solid rgba(0, 0, 255, 0);
+    }
+    #text-about {
+        font-family: "Aaron's Hand";
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
+        margin: 0 95px 0 5px;
+        padding: 30px;
+    }
+    #text-about h2 {
+        margin: 0;
+        color: rgb(23, 191, 237);
+    }
+    #text-about p {
+        margin: 0;
+        color: var(--font-color);
+    }
+    footer {
+        color: var(--font-color);
+        font-family: 'Apple symbols', sans-serif;
+        position: relative;
+        top: 100px;
+    }
+    #social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        margin: 10px 0 140px 0;
+    }
+    #social-media a {
+        text-decoration: none;
+        color: var(--font-color);
+        font-size: 80px;
+    }
+}
+@media only screen and (min-width: 905px) {
+    body {
+        background-color: #000000;
+        cursor:url("The Infamous Middle Finger.cur"), auto;
+    }
+    .hover a:hover {
+        cursor:url("golden middle finger link.cur"), auto;
+    }
+    #div-cover {
+        display: flex;
+        flex-direction: column;
+        margin-right: 8px;
+    }
+    #h1-and-lang {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0 0 -98px 0;
+    }
+    #lang {
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 8px 0 0;
+    }
+    #lang a {
+        text-decoration: none;
+        text-align: center;
+        border-radius: 5px;
+        background-color: rgba(23, 191, 237, 0.219);
+        border: 0px solid var(--font-color);
+        width: 70px;
+        padding: 8px 0 8px 0;
+        color:  rgb(23, 191, 237);
+    }
+    h1 {
+        font-family: "Creamine Demo";
+        font-size: 70px;
+        margin: 13px 0 0 15px;
+        padding: 0;
+        color: var(--font-color);
+    }
+    #div-phrase {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+        position: absolute;
+        right: 32vw;
+    }
+    #phrase {
+        position: relative;
+        top: 0px;
+        width: 35vw;
+    }
+    .btn {
+        font-family: "Aaron's Hand";
+        font-size: 30px;
+        text-decoration: none;
+        text-align: center;
+        /* border-radius: 5px;
+        background-color: rgb(23, 191, 237);
+        border: 0px solid var(--font-color); */
+        width: 70px;
+        padding: 12px 8px 5px 8px;
+        color: #eeeeee;
+    }
+    #img-and-btns {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    #img-and-btns-about {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    #img-and-btns-works {
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-end;
+        align-items: flex-start;
+        gap: 1vw;
+    }
+    #gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3vw;
+        margin: 75px;
+    }
+    #gallery img {
+        width: 600px;
+        height: 300px;
+        object-fit: cover;
+    }
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+     /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+    /* Caption of Modal Image */
+    #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    }
+    /* Add Animation */
+    .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    }
+    @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+    }
+    @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+    }
+    /* The Close Button */
+    .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    }
+    .close:hover,
+    .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    #gallery img:hover {
+        opacity: 0.7;
+        cursor:url("golden middle finger link.cur"), auto;
+    }
+    #album-text-works p {
+        color: var(--font-color);
+        font-family: 'Apple symbols', sans-serif;
+        font-size: 20px;
+        width: 700px;
+    }
+    #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 200px;
+        margin-top: 200px;
+    }
+    #menu-about {
+        position: absolute;
+        right: -66.2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 200px;
+    }
+    #img-cover {
+        height: 1200px;
+        border-radius: 20px;
+        border: 0px solid rgba(0, 0, 255, 0);
+        z-index: -1;
+    }
+    
+    #img-cover-about {
+        width: 700px;
+        margin-left: -80px;
+        border-radius: 20px;
+        border: 0px solid rgba(0, 0, 255, 0);
+        z-index: -1;
+    }
+    #img-cover-works {
+        width: 400px;
+        border-radius: 20px;
+        border: 0px solid rgba(0, 0, 255, 0);
+    }
+    #text-about {
+        font-family: "Aaron's Hand";
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
+        margin: 0 95px 0 75px;
+        padding: 30px;
+    }
+    #text-about h2 {
+        margin: 0;
+        color: rgb(23, 191, 237);
+    }
+    #text-about p {
+        margin: 0;
+        color: var(--font-color);
+    }
+    footer {
+        color: var(--font-color);
+        font-family: 'Apple symbols', sans-serif;
+        position: relative;
+        top: 100px;
+    }
+    #social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+        margin: 10px 0 140px 0;
+    }
+    #social-media a {
+        text-decoration: none;
+        color: var(--font-color);
+        font-size: 80px;
+    }
+}
